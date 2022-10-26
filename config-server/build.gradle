@@ -1,0 +1,21 @@
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$versions.springBoot")
+    }
+}
+dependencies {
+
+    //ConfigServerOlusturma3 - bagımlılıklar kendi build.gradle ında olusturulur
+    //ConfigServerOlusturma4 - yml dosyası olusturulur bu dosyadaki locationa dikkat config-repo olusturulur
+    //ConfigServerOlusturma5 - yml dosyası olusturulur bu dosyadaki locationa dikkat config-repo olusturulur.
+    //ConfigServerOlusturma7 - user ve auth daki yml yeniden yazılır. uriler congig yml a isaret eder name de isaret etmelidir .
+
+
+
+
+
+    implementation libs.springCloudStarterConfig
+    implementation libs.springCloudConfigServer
+
+
+}
